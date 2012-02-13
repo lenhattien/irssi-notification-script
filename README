@@ -1,3 +1,9 @@
 DEMO pics
 
-This script works flawlessly on my MAC OS
+The client script (client/irssi_growler/irssiNotify.sh) run as startup program on my computer. It will ssh to serenity (a 'Nerver Reboot' CAT server that contains my irssi chat log), parse thelog and pop up the message on my desktop screen via Growl.
+Client needs to be installed: Growl.
+
+The server script (server/fnotify.pl) should be stored cp to ~/.irssi/scripts/autorun. It will monitor the irssi program and write to log file ~/.irssi/fnotify everytime someone send me a private msg or hilight me.
+Server needs to be installed: irssi, screen
+
+This script works flawlessly on my MAC OS.
